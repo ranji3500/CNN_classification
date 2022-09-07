@@ -4,7 +4,7 @@ import  cv2
 from keras.models import load_model
 from PIL import Image, ImageOps
 
-model = load_model(r"C:\Users\Admin\Desktop\object_detection_gender\gender (1).h5")
+model = load_model(r"model.h5")
 img = cv2.imread(r'image.jpg')
 face = cv2.resize(img, (224, 224), fx=0, fy=0, interpolation=cv2.INTER_CUBIC)
 # face = cv2.resize(img, (1400, 1000), interpolation=cv2.INTER_CUBIC)
