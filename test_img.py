@@ -18,6 +18,6 @@ img_array = np.expand_dims(img_array, axis=0)
 pred = model.predict(img_array)
 print(pred)
 if pred[0][0] == 1:
-    prediction = 'female'
+    prediction = 'parrot'
 else:
-    prediction = 'male'
+    prediction = 'crow'
